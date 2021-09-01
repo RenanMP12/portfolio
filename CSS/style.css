@@ -1,3 +1,149 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,500;1,600&family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+header
+{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.img-wrapper
+{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgba(20,20,20,0.5);
+}
+
+.img-wrapper img
+{
+    width: 100%;
+    height: 100%;    
+    object-fit: cover;
+    opacity: 0.5;
+    animation: brighter 10s, zoom 10s;
+}
+@keyframes brighter
+{
+    0%
+    {
+        filter: brightness(0.5);
+        -webkit-filter:brightness(0.5);
+    }
+    100%
+    {
+        filter: brightness(1);
+        -webkit-filter:brightness(1);
+    }
+}
+@keyframes zoom
+{
+    0%
+    {
+        transform: scale(1.2);
+    }
+    100%
+    {
+        transform: scale(1.0);
+    }
+}
+.banner
+{
+    position: absolute;
+    top: 30%;
+    left: 12%;
+}
+.banner h1
+{
+    color: aliceblue;
+    font-size: 3.5rem;
+    font-family: "Roboto", serif;
+    font-weight: 200;
+    text-shadow: .2rem .3rem 2px rgba(20,20,20,.4);
+    line-height: 5rem;
+    margin-bottom: 2rem;
+ 
+}
+.banner p
+{
+    font-family: "Courier Prime", serif;
+    color: aliceblue;
+    font-size: 3rem;
+    text-shadow: .1rem .1rem 2px rgba(20,20,20,.4);
+    overflow: hidden;
+    display: inline-block;
+    letter-spacing: 2px;
+    width: max-content;
+    animation: typing 6s steps(13, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: 700;
+    border-right: 4px solid orange;
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 50% 
+    }
+}
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: orange; 
+    }
+}
+
+.banner button:hover
+{
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.menu ul
+{
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    height: 60px;
+    align-items:center;
+}
+.menu li
+{
+    list-style-type: none;
+    padding: 1rem;
+}
+.active{
+    font-weight: bold;
+    color: aliceblue;
+    text-shadow: .1rem .1rem 2px rgba(20,20,20,.4);
+    text-shadow: 
+    font-family: "Courier Prime", serif;
+}
+.menu ul li a
+{
+    cursor: pointer;
+    font-size: 1.2rem
+}
+.menu ul li a:hover
+{
+    color: cadetblue;
+    font-size: 1.3rem
+}
+
