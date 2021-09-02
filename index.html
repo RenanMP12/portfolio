@@ -12,16 +12,13 @@
     </head>
     <body>
         <div class="container">
-            <header>
-                <div class="menu">
-                    <ul>
-                        <li><a href="#home" class="active">Home</a></li>
-                        <li><a href="#about_me" class="active">About me</a></li>
-                        <li><a href="#my_resume" class="active">My resumé</a></li>
-                        <li><a href="#contact_me" class="active">Contact me</a></li>
-                        <li><a href="#teste" class="active">Teste</a></li>
-                    </ul>
-                </div>
+            <input type="checkbox" id="check">
+            <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+            </label>
+            
+            <header id="home">
                 <div class="img-wrapper">
                     <img src="images/aircraft.jpg" alt="Aircraft">
                 </div>
@@ -30,21 +27,128 @@
                     <p>Renan Portela</p>
                 </div>
             </header>
-            <section id="home">
-                <h2>Home</h2>
-            </section>
+            
+            <aside class="sidebar">
+                <nav>
+                    <ul class="menu">
+                        <li class="menu-item"><a href="#home" class="menu-link">home</a></li>
+                        <li class="menu-item"><a href="#about_me" class="menu-link">About me</a></li>
+                        <li class="menu-item"><a href="#my_skills" class="menu-link">My skills</a></li>
+                        <li class="menu-item"><a href="#contact_me" class="menu-link">Contact me</a></li>
+                    </ul>
+                </nav>
+                 <div class="social-media-menu">
+                     <a target="_blank" href="https://www.linkedin.com/in/renan-miranda-portela-215b7940?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BXvUWY89AT9iXzEPgSrIF7w%3D%3D"><i class="fab fa-linkedin-in"></i></a>
+                     <a target="_blank"  href="https://github.com/RenanMP12"><i class="fab fa-github-alt"></i></a>
+                </div>
+            </aside>
+            
             <section id="about_me" style="margin-bottom: 100px;">
-                <h2>About me</h2>
+                <div class="section-header">
+                    <h2>About me</h2>
+                </div>
+                <div class="section-paragraph" id="text-about-me">
+                    <p>
+
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt sed mauris eget ultricies. Morbi et elit molestie, volutpat dui vestibulum, elementum diam. Nam porta orci congue risus gravida, sit amet tempus risus facilisis. Praesent viverra laoreet dui, at pellentesque nisl ullamcorper id. Pellentesque ultrices vestibulum risus, et posuere purus varius id. Donec vitae tempor arcu. Ut efficitur, felis quis mollis rhoncus, mi risus malesuada risus, ut semper neque justo ac mi. Aenean in arcu vel magna dapibus venenatis. Donec sit amet consectetur magna. Phasellus elit eros, pharetra pretium massa vitae, lacinia ornare justo. Cras sollicitudin ligula sit amet suscipit gravida. Aliquam efficitur dolor sed diam dignissim, et rhoncus arcu porttitor. Pellentesque velit ligula, imperdiet at magna sit amet, elementum aliquet elit. Suspendisse sit amet egestas felis, non efficitur libero.<br>
+
+Fusce nec dapibus tortor, interdum faucibus lacus. Nullam vestibulum odio sit amet tempor malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Ut quis fringilla nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam eu eleifend nulla. Vivamus molestie faucibus mollis. Praesent et neque ante. Praesent vestibulum euismod mauris, eu convallis eros fringilla rutrum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas aliquet felis id purus pharetra accumsan. Curabitur aliquam, nulla at finibus semper, erat nisi interdum nulla, semper dignissim odio dolor in lacus. Curabitur nec lectus a dui dictum euismod. Donec a elementum sapien.<br>
+
+Sed vulputate ligula quis metus facilisis, a tempor risus condimentum. Fusce venenatis, neque id sagittis tristique, erat quam bibendum nulla, sit amet suscipit libero tortor id lacus. Phasellus luctus tellus pulvinar augue faucibus, vel feugiat dui fermentum. Aliquam vitae nibh vitae ante vulputate imperdiet. Aliquam massa dui, ornare id neque vel, dictum condimentum erat. Nunc pellentesque placerat risus sed cursus. Nunc gravida orci id ornare tristique. Nunc tristique, justo sed vehicula condimentum, enim ligula tristique arcu, cursus dictum metus eros lobortis neque. Maecenas ac porttitor ante. Duis posuere dui risus, a condimentum orci luctus facilisis. Vestibulum et nisi nec arcu vestibulum consequat. Integer elementum, velit nec aliquam vestibulum, lorem nisi elementum elit, eu hendrerit elit dolor ut turpis. Sed a risus sit amet nibh feugiat interdum sed vitae eros. Pellentesque at magna quis lacus mollis mattis. 
+                    </p>
+                </div>
             </section>
-            <section id="my_resume">
-                <h2>My resumé</h2>
+            <section id="my_skills">
+                <div class="section-header">
+                    <h2>My skills</h2>
+                </div>
+                <div class="skills">
+                    <div class="card">
+                        <div class="content">
+                            <h2>01</h2>
+                            <h3>Python</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt sed mauris eget ultricies. Morbi et elit molestie, volutpat dui vestibulum, elementum diam. Nam porta orci congue risus gravida, sit amet tempus risus facilisis.</p>
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <h2>02</h2>
+                            <h3>MATLAB</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt sed mauris eget ultricies. Morbi et elit molestie, volutpat dui vestibulum, elementum diam. Nam porta orci congue risus gravida, sit amet tempus risus facilisis.</p>
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <h2>03</h2>
+                            <h3>HTML</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt sed mauris eget ultricies. Morbi et elit molestie, volutpat dui vestibulum, elementum diam. Nam porta orci congue risus gravida, sit amet tempus risus facilisis.</p>
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <h2>04</h2>
+                            <h3>CSS</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt sed mauris eget ultricies. Morbi et elit molestie, volutpat dui vestibulum, elementum diam. Nam porta orci congue risus gravida, sit amet tempus risus facilisis.</p>
+                            <i class="fas fa-code"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <h2>05</h2>
+                            <h3>Portuguese</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt sed mauris eget ultricies. Morbi et elit molestie, volutpat dui vestibulum, elementum diam. Nam porta orci congue risus gravida, sit amet tempus risus facilisis.</p>
+                            <i class="fas fa-globe"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <h2>06</h2>
+                            <h3>German</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt sed mauris eget ultricies. Morbi et elit molestie, volutpat dui vestibulum, elementum diam. Nam porta orci congue risus gravida, sit amet tempus risus facilisis.</p>
+                            <i class="fas fa-globe"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <h2>07</h2>
+                            <h3>Abaqus</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt sed mauris eget ultricies. Morbi et elit molestie, volutpat dui vestibulum, elementum diam. Nam porta orci congue risus gravida, sit amet tempus risus facilisis.</p>
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="content">
+                            <h2>08</h2>
+                            <h3>ANSYS</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt sed mauris eget ultricies. Morbi et elit molestie, volutpat dui vestibulum, elementum diam. Nam porta orci congue risus gravida, sit amet tempus risus facilisis.</p>
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                    </div>
+                </div>
             </section>
             <section id="contact_me">
-                <h2>Contact me</h2>
+                <div class="section-header">
+                    <h2>Contact me</h2>
+                </div>
             </section>
-            <section id="teste">
-                <h2>Teste</h2>
-            </section>
+            <footer>
+                <div class="footer-content">
+                    <p>
+                        Copyright &copy; 2021, Renan Portela - All rights reserved
+                    </p>
+                    <div class="social_media">
+                        <ul>
+                            <li><a target="_blank" href="https://www.linkedin.com/in/renan-miranda-portela-215b7940?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BXvUWY89AT9iXzEPgSrIF7w%3D%3D"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a target="_blank"  href="https://github.com/RenanMP12"><i class="fab fa-github-alt"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
         </div>
     </body>
+ 
 </html>
